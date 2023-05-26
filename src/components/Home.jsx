@@ -3,7 +3,7 @@ import { HiArrowNarrowRight } from 'react-icons/hi';
 import me from '../assets/me-blurred.jpg';
 import { Link } from "react-scroll";
 
-function Home() {
+function Home({ content }) {
     return (
         <div
             name="home"
@@ -13,13 +13,13 @@ function Home() {
                 <div className="flex flex-col justify-center h-1/3 sm:h-1/3">
                     <div>
                         <h2 className="text-4xl md:text-5xl font-bold text-[#112D4E]">
-                            Hi there, my name is
+                            {content?.fields.main_caption_1}
                         </h2>
                         <h2 className="text-4xl md:text-5xl font-bold text-[#112D4E]">
-                            Akram Mansour
+                            {content?.fields.main_caption_2}
                         </h2>
                         <h3 className="text-3xl mt-2">
-                            I'm a Software Engineer
+                            {content?.fields.subcaption}
                         </h3>
                     </div>
 

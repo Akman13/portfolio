@@ -26,7 +26,6 @@
   height: 250px;
 }
 
-/* TODO: play around with the bg gradient */
 .content-div:hover {
   background-image: linear-gradient(to right,
       rgba(112, 157, 255, 0.8),

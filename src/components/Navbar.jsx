@@ -4,22 +4,22 @@ import {
     FaTimes,
     FaGithub,
     FaLinkedin,
-    FaFacebook,
-    FaLinkedinIn,
 } from 'react-icons/fa';
-import { HiOutlineMail } from 'react-icons/hi';
 import { BsPersonVcardFill } from 'react-icons/bs';
 import { Link } from 'react-scroll';
 
-function Navbar() {
+function Navbar( {content} ) {
     const [nav, setNav] = useState(false);
     const handleClick = () => setNav(!nav);
 
+    const resumeLink = content?.fields.resume_link;
+    const linkedInLink = content?.fields.linkedin_link;
+    const githubLink = content?.fields.github_link;
+
     return (
         <div className='top-0 sticky w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-white z-40'>
-            {/* TODO: Replace font for my initials OR change into logo */}
             <div>
-                <h1 className=' font-thin text-2xl italic font-serif'>AM</h1>
+                <h1 className='text-2xl italic'>A.M.</h1>
             </div>
 
             {/* menu */}
@@ -51,7 +51,7 @@ function Navbar() {
                 </li>
                 <li>
                     {' '}
-                    <form action="https://drive.google.com/file/d/1TpmjH7kE261_3Y83HJ1S9V-8waVYbHoi/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="">
+                    <form action={resumeLink} target="_blank" rel="noopener noreferrer" className="">
                         <button className="resume-nav">
                             Resume
                             <span></span>
@@ -104,7 +104,7 @@ function Navbar() {
                 </li>
                 <li className='py-6 text-4xl'>
                     {' '}
-                    <a href="https://drive.google.com/file/d/1TpmjH7kE261_3Y83HJ1S9V-8waVYbHoi/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                    <a href={resumeLink} target="_blank" rel="noopener noreferrer">
                         Resume
                     </a>
                 </li>
@@ -116,7 +116,7 @@ function Navbar() {
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]'>
                         <a
                             className='flex justify-between items-center w-full text-gray-300'
-                            href='/'
+                            href={resumeLink} target="_blank" rel="noopener noreferrer"
                         >
                             Resume <BsPersonVcardFill size={30} />
 
@@ -126,7 +126,7 @@ function Navbar() {
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
                         <a
                             className='flex justify-between items-center w-full text-gray-300'
-                            href='/'
+                            href={linkedInLink} target="_blank" rel="noopener noreferrer"
                         >
                             Linkedin <FaLinkedin size={30} />
                         </a>
@@ -134,7 +134,7 @@ function Navbar() {
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]'>
                         <a
                             className='flex justify-between items-center w-full text-gray-300'
-                            href='/'
+                            href={githubLink} target="_blank" rel="noopener noreferrer"
                         >
                             Github <FaGithub size={30} />
                         </a>

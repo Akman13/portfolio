@@ -1,7 +1,7 @@
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
-function Contact() {
+function Contact( {content} ) {
     return (
         <div name='contact' className='relative w-full h-screen bg-[#FAFAFA] relative flex p-4 pt-20 overflow-hidden'>
 
@@ -11,7 +11,7 @@ function Contact() {
                 <div className='pt-4 pb-8 flex flex-col w-full justify-center items-center absolute top-20 lg:pt-20'>
                     <p className='text-4xl font-bold inline border-b-4 border-cyan-500'>Contact</p>
 
-                    <p className='md:text-lg text-[#163172] p-4'>If you like what you see or are interested in a chat, don't hesitate to reach out - I'd love to hear from you!</p>
+                    <p className='md:text-lg text-[#163172] p-4 text-center'>If you're interested in working together or just want to chat, don't hesitate to reach out!</p>
                 </div>
 
 
@@ -31,12 +31,12 @@ function Contact() {
                 </form>
 
                 <div className="flex justify-evenly space-x-5 w-[150px] h-fit pt-4 h-auto">
-                    <a href="" target="_blank" rel="noopener noreferrer" className="h-fit">
+                    <a href={content?.fields.github_link} target="_blank" rel="noopener noreferrer" className="h-fit">
                         <FaGithub stroke="#005691" fill="#005691" className="w-[40px] h-[40px] hover:scale-110 duration-300"></FaGithub>
 
                     </a>
 
-                    <a href="" target="_blank" rel="noopener noreferrer" className="h-fit m-0">
+                    <a href={content?.fields.linkedin_link} target="_blank" rel="noopener noreferrer" className="h-fit m-0">
                         <FaLinkedin stroke="#005691" fill="#005691" className="w-[40px] h-[40px] hover:scale-110 duration-300"></FaLinkedin>
 
                     </a>
@@ -44,12 +44,6 @@ function Contact() {
                 </div>
 
             </div>
-
-            {/* Footer is stickied or fixed to page bottom */}
-            {/* Mobile: footer has small height  */}
-            {/* sm: footer has normal height */}
-            {/* Footer has © Akram Mansour 2023 \n  "logo" content hosted for free at Butter */}
-
 
             <footer className="absolute flex flex-col w-full justify-around bottom-0 left-0 z-40 h-[55px] block border-t-2 border-[#D6E4F0] pt-2">
 

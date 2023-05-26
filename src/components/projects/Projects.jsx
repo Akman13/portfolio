@@ -9,7 +9,7 @@ import trackAJetStatic from '../../assets/carousel/trackajet/trackajet-home-page
 import trackAJetGif from '../../assets/carousel/trackajet/jet-tracked.gif'
 import portfolioStatic from '../../assets/carousel/portfolio/home-page.png'
 
-function Projects() {
+function Projects( {content} ) {
 
     const carouselStyle = {
         control: {
@@ -39,26 +39,26 @@ function Projects() {
 
                         <Carousel.Slide className="rounded-lg bg-[#D6E4F0] h-full pr-0 md:mr-4 mr-2">
 
-                            <div className="flex flex-col justify-evenly md:flex-row h-full p-2 md:justify-between md:h-[90%] md:p-4">
+                            <div className="flex flex-col justify-between md:flex-row h-full p-2 md:justify-between md:h-[90%] md:p-4">
 
                                 {/* Preview Image+Gif div */}
-                                <div className="relative w-[70%] md:w-[60%] h-auto self-center">
-                                    <img src={goodCatchStatic} alt="GoodCatch project preview" className="static rounded-md shadow-md max-w-[100%] max-h-[100%]" />
+                                <div className="relative md:w-[60%] h-auto self-center">
+                                    <img src={content[0]?.fields.project[0].project_image_static} alt="GoodCatch project preview" className="static rounded-md shadow-md max-w-[100%] max-h-[100%]" />
 
-                                    <img src={goodCatchGif} alt="GoodCatch project preview" className="rounded-md shadow-md" />
+                                    <img src={content[0]?.fields.project[0].project_image_gif} alt="GoodCatch project preview" className="rounded-md shadow-md" />
                                 </div>
 
                                 {/* Text */}
                                 <section className="md:w-[40%] md:px-4 md:h-fit self-center text-center">
-                                    <h3 className="text-2xl text-[#163172] font-bold border-b-2 border-cyan-500 md:pt-4 md:mb-2 min-w-[50%] inline-block">GoodCatch</h3>
+                                    <h3 className="text-2xl text-[#163172] font-bold border-b-2 border-cyan-500 md:pt-4 md:mb-2 min-w-[50%] inline-block">{content[0]?.fields.project[0].project_title}</h3>
 
-                                    <div className="my-1 md:my-2 flex mx-auto justify-between max-w-[50%]">
-                                        <a href="" target="_blank" rel="noopener noreferrer" className="underline mr-1">GitHub</a>
-                                        <a href="" target="_blank" rel="noopener noreferrer" className="underline ml-1">Demo</a>
+                                    <div className="my-1 md:my-2 flex mx-auto justify-between max-w-[50%] md:text-lg">
+                                        <a href={content[0]?.fields.project[0].github_repo_source} target="_blank" rel="noopener noreferrer" className="underline mr-1">GitHub</a>
+                                        <a href={content[0]?.fields.project[0].demo_link_source} target="_blank" rel="noopener noreferrer" className="underline ml-1">Demo</a>
                                     </div>
 
-                                    <p className="text-sm md:text-md md:pb-0">
-                                        A full-stack RESTful CRUD web-app built using Node.js, Express.js, EJS and PostgreSQL. Users can create profiles and make posts from recent fishing trips online, all of which is stored in a live database.
+                                    <p className="text-sm md:text-lg md:pb-0">
+                                    {content[0]?.fields.project[0].project_description}
                                     </p>
 
                                     <div className="flex justify-around mx-auto max-w-[80%] md:max-w-[60%] mt-2 pb-6">
@@ -84,22 +84,22 @@ function Projects() {
 
                                 {/* Preview Image+Gif div */}
                                 <div className="relative md:w-[60%] h-auto self-center">
-                                    <img src={pragmaticEnergyStatic} alt="GoodCatch project preview" className="static rounded-md shadow-md max-w-[100%] max-h-[100%]" />
+                                    <img src={content[0]?.fields.project[1].project_image_static} alt="GoodCatch project preview" className="static rounded-md shadow-md max-w-[100%] max-h-[100%]" />
 
-                                    <img src={pragmaticEnergyGif} alt="GoodCatch project preview" className="rounded-md shadow-md" />
+                                    <img src={content[0]?.fields.project[1].project_image_gif} alt="GoodCatch project preview" className="rounded-md shadow-md" />
                                 </div>
 
                                 {/* Text */}
                                 <section className="md:w-[40%] md:px-4 md:h-fit self-center text-center">
-                                    <h3 className="text-2xl text-[#163172] font-bold border-b-2 border-cyan-500 md:pt-4 md:mb-2 min-w-[50%] inline-block">Pragmatic Energy</h3>
+                                    <h3 className="text-2xl text-[#163172] font-bold border-b-2 border-cyan-500 md:pt-4 md:mb-2 min-w-[50%] inline-block">{content[0]?.fields.project[1].project_title}</h3>
 
-                                    <div className="my-1 md:my-2 flex mx-auto justify-between max-w-[50%]">
-                                        <a href="" target="_blank" rel="noopener noreferrer" className="underline mr-1">GitHub</a>
-                                        <a href="" target="_blank" rel="noopener noreferrer" className="underline ml-1">Demo</a>
+                                    <div className="my-1 md:my-2 flex mx-auto justify-between max-w-[50%] md:text-lg">
+                                        <a href={content[0]?.fields.project[1].github_repo_source} target="_blank" rel="noopener noreferrer" className="underline mr-1">GitHub</a>
+                                        <a href={content[0]?.fields.project[1].demo_link_source} target="_blank" rel="noopener noreferrer" className="underline ml-1">Demo</a>
                                     </div>
 
-                                    <p className="text-sm md:text-md md:pb-0">
-                                        A single-page full-stack application that integrates the Google Maps API with an in-built REST JSON API to dynamically petrol stations from anywhere around Australia. This was built as a group project and utilised GitHub heavily for collaboration and version control.
+                                    <p className="text-sm md:text-lg md:pb-0">
+                                        {content[0]?.fields.project[1].project_description}
                                     </p>
 
                                     <div className="flex justify-around mx-auto max-w-[80%] md:max-w-[60%] mt-2 pb-6">
@@ -127,22 +127,22 @@ function Projects() {
 
                                 {/* Preview Image+Gif div */}
                                 <div className="relative md:w-[60%] h-auto self-center">
-                                    <img src={trackAJetStatic} alt="GoodCatch project preview" className="static rounded-md shadow-md max-w-[100%] max-h-[100%]" />
+                                    <img src={content[0]?.fields.project[2].project_image_static} alt="GoodCatch project preview" className="static rounded-md shadow-md max-w-[100%] max-h-[100%]" />
 
-                                    <img src={trackAJetGif} alt="GoodCatch project preview" className="rounded-md shadow-md" />
+                                    <img src={content[0]?.fields.project[2].project_image_gif} alt="GoodCatch project preview" className="rounded-md shadow-md" />
                                 </div>
 
                                 {/* Text */}
                                 <section className="md:w-[40%] md:px-4 md:h-fit self-center text-center">
-                                    <h3 className="text-2xl text-[#163172] font-bold border-b-2 border-cyan-500 md:pt-4 md:mb-2 min-w-[50%] inline-block">TrackAJet</h3>
+                                    <h3 className="text-2xl text-[#163172] font-bold border-b-2 border-cyan-500 md:pt-4 md:mb-2 min-w-[50%] inline-block">{content[0]?.fields.project[2].project_title}</h3>
 
-                                    <div className="my-1 md:my-2 flex mx-auto justify-between max-w-[50%]">
-                                        <a href="" target="_blank" rel="noopener noreferrer" className="underline mr-1">GitHub</a>
-                                        <a href="" target="_blank" rel="noopener noreferrer" className="underline ml-1">Demo</a>
+                                    <div className="my-1 md:my-2 flex mx-auto justify-between max-w-[50%] md:text-lg">
+                                        <a href={content[0]?.fields.project[2].github_repo_source} target="_blank" rel="noopener noreferrer" className="underline mr-1">GitHub</a>
+                                        <a href={content[0]?.fields.project[2].demo_link_source} target="_blank" rel="noopener noreferrer" className="underline ml-1">Demo</a>
                                     </div>
 
-                                    <p className="text-sm md:text-md md:pb-0">
-                                        A front-end single-page React application integrated with the OpenSky Network and the Google Maps APIs that displays flight paths for any active flight. Valid user input is converted to flight ICAO24 code for retrieval of flight data from the OpenSky API.
+                                    <p className="text-sm md:text-lg md:pb-0">
+                                        {content[0]?.fields.project[2].project_description}
                                     </p>
 
                                     <div className="flex justify-around mx-auto max-w-[80%] md:max-w-[60%] mt-2 pb-6">
@@ -168,21 +168,21 @@ function Projects() {
 
                                 {/* Preview Image+Gif div */}
                                 <div className="relative md:w-[60%] h-auto self-center">
-                                    <img src={portfolioStatic} alt="GoodCatch project preview" className="rounded-md shadow-md max-w-[100%] max-h-[100%]" />
+                                    <img src={content[0]?.fields.project[3].project_image_static} alt="GoodCatch project preview" className="rounded-md shadow-md max-w-[100%] max-h-[100%]" />
 
                                 </div>
 
                                 {/* Text */}
                                 <section className="md:w-[40%] md:px-4 md:h-fit self-center text-center">
-                                    <h3 className="text-2xl text-[#163172] font-bold border-b-2 border-cyan-500 pt-4 mb-2 min-w-[50%] inline-block">Personal Portfolio</h3>
+                                    <h3 className="text-2xl text-[#163172] font-bold border-b-2 border-cyan-500 pt-4 mb-2 min-w-[50%] inline-block">{content[0]?.fields.project[3].project_title}</h3>
 
-                                    <div className="my-1 md:my-2 flex mx-auto justify-between max-w-[50%]">
-                                        <a href="" target="_blank" rel="noopener noreferrer" className="underline mr-1">GitHub</a>
-                                        <a href="" target="_blank" rel="noopener noreferrer" className="underline ml-1">Demo</a>
+                                    <div className="my-1 md:my-2 flex mx-auto justify-between max-w-[50%] md:text-lg">
+                                        <a href={content[0]?.fields.project[3].github_repo_source} target="_blank" rel="noopener noreferrer" className="underline mr-1">GitHub</a>
+                                        <a href="/" target="_blank" rel="noopener noreferrer" className="underline ml-1">Demo</a>
                                     </div>
 
-                                    <p className="text-sm md:text-md md:pb-0">
-                                        My personal portfolio - built using React, Mantine, ButterCMS and Tailwind! The site is fully responsive and was built with a mobile-first approach in mind.
+                                    <p className="text-sm md:text-lg md:pb-0">
+                                        {content[0]?.fields.project[3].project_description}
                                     </p>
 
                                     <div className="flex justify-around mx-auto max-w-[80%] md:max-w-[60%] mt-2 pb-6">
