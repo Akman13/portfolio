@@ -1,15 +1,13 @@
-# Personal Portfolio
+# Akram Mansour - Personal Portfolio
 
-## Access
-<!-- TODO: Link up the here to the link -->
-<!-- Test -->
-My portfolio is hosted on GitHub pages and can be accessed here
+I've deployed my portfolio on GitHub Pages and can be accessed at [https://akman13.github.io/portfolio/](https://akman13.github.io/portfolio/).
 
-## Stacks
-<!-- Built using ... stacks -->
-<!-- React, Tailwind, Mantine -->
+## Stacks & Features
+This is a static portfolio that has been created to introduce myself to any interested viewers as well as an excuse to get familiar with some new techs!
 
-## Features
-<!-- Used Mantine for the Carousel -->
-<!-- The content is managed on ButterCMS for free -->
-<!-- Contact form setup using xyz site -->
+This site was built using:
+1. ReactJs 
+2. Tailwind for CSS utility
+3. Mantine for the carousel display
+4. ButterCMS for content management, and
+5. Formspree for handling form submissions
