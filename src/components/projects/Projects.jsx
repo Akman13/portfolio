@@ -39,7 +39,7 @@ function Projects( {content} ) {
 
                         <Carousel.Slide className="rounded-lg bg-[#D6E4F0] h-full pr-0 md:mr-4 mr-2">
 
-                            <div className="flex flex-col justify-between md:flex-row h-full p-2 md:justify-between md:h-[90%] md:p-4">
+                            <div className="flex flex-col justify-evenly md:flex-row h-full p-2 md:justify-between md:h-[90%] md:p-4">
 
                                 {/* Preview Image+Gif div */}
                                 <div className="relative md:w-[60%] h-auto self-center">
