@@ -178,7 +178,7 @@ function Projects( {content} ) {
 
                                     <div className="my-1 md:my-2 flex mx-auto justify-between max-w-[50%] md:text-lg">
                                         <a href={content[0]?.fields.project[3].github_repo_source} target="_blank" rel="noopener noreferrer" className="underline mr-1">GitHub</a>
-                                        <a href="/" target="_blank" rel="noopener noreferrer" className="underline ml-1">Demo</a>
+                                        <a href={content[0]?.fields.project[3].demo_link_source} target="_blank" rel="noopener noreferrer" className="underline ml-1">Demo</a>
                                     </div>
 
                                     <p className="text-sm md:text-lg md:pb-0">
