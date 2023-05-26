@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.66d86159.css",
-    "main.js": "/portfolio/static/js/main.64d3d307.js",
+    "main.js": "/portfolio/static/js/main.6689bf57.js",
     "static/media/jet-tracked.gif": "/portfolio/static/media/jet-tracked.c9533d65ccbd2ffa7f27.gif",
     "static/media/spotlight-station.gif": "/portfolio/static/media/spotlight-station.2937bfbfc21a5a4bd0fb.gif",
     "static/media/user-signup.gif": "/portfolio/static/media/user-signup.050c1f7ba150abd49939.gif",
@@ -11,10 +11,10 @@
     "static/media/trackajet-home-page.png": "/portfolio/static/media/trackajet-home-page.ea8e911aa49b6f71ed9e.png",
     "index.html": "/portfolio/index.html",
     "main.66d86159.css.map": "/portfolio/static/css/main.66d86159.css.map",
-    "main.64d3d307.js.map": "/portfolio/static/js/main.64d3d307.js.map"
+    "main.6689bf57.js.map": "/portfolio/static/js/main.6689bf57.js.map"
   },
   "entrypoints": [
     "static/css/main.66d86159.css",
-    "static/js/main.64d3d307.js"
+    "static/js/main.6689bf57.js"
   ]
 }
