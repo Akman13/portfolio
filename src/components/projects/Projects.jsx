@@ -1,13 +1,7 @@
 import React from "react";
 import { Carousel } from '@mantine/carousel';
 import './Projects.css'
-import goodCatchGif from '../../assets/carousel/good-catch/user-signup.gif'
-import goodCatchStatic from '../../assets/carousel/good-catch/home-page.png'
-import pragmaticEnergyStatic from '../../assets/carousel/pragmatic-energy/default-display.png'
-import pragmaticEnergyGif from '../../assets/carousel/pragmatic-energy/spotlight-station.gif'
-import trackAJetStatic from '../../assets/carousel/trackajet/trackajet-home-page.png'
-import trackAJetGif from '../../assets/carousel/trackajet/jet-tracked.gif'
-import portfolioStatic from '../../assets/carousel/portfolio/home-page.png'
+
 
 function Projects( {content} ) {
 
@@ -39,10 +33,10 @@ function Projects( {content} ) {
 
                         <Carousel.Slide className="rounded-lg bg-[#D6E4F0] h-full pr-0 md:mr-4 mr-2">
 
-                            <div className="flex flex-col justify-evenly md:flex-row h-full p-2 md:justify-between md:h-[90%] md:p-4">
+                            <div className="flex flex-col justify-evenly cursor-grab md:flex-row h-full p-2 md:justify-between md:h-[90%] md:p-4">
 
                                 {/* Preview Image+Gif div */}
-                                <div className="relative md:w-[60%] h-auto self-center">
+                                <div className="relative md:w-[60%] h-auto self-center cursor-default">
                                     <img src={content[0]?.fields.project[0].project_image_static} alt="GoodCatch project preview" className="static rounded-md shadow-md max-w-[100%] max-h-[100%]" />
 
                                     <img src={content[0]?.fields.project[0].project_image_gif} alt="GoodCatch project preview" className="rounded-md shadow-md" />
@@ -80,10 +74,10 @@ function Projects( {content} ) {
 
                         <Carousel.Slide className="rounded-lg bg-[#D6E4F0] h-full pr-0 md:mr-4 mr-2">
 
-                            <div className="flex flex-col justify-evenly md:flex-row h-full p-2 md:justify-between md:h-[90%] md:p-4">
+                            <div className="flex flex-col justify-evenly cursor-grab md:flex-row h-full p-2 md:justify-between md:h-[90%] md:p-4">
 
                                 {/* Preview Image+Gif div */}
-                                <div className="relative md:w-[60%] h-auto self-center">
+                                <div className="relative md:w-[60%] h-auto self-center cursor-default">
                                     <img src={content[0]?.fields.project[1].project_image_static} alt="GoodCatch project preview" className="static rounded-md shadow-md max-w-[100%] max-h-[100%]" />
 
                                     <img src={content[0]?.fields.project[1].project_image_gif} alt="GoodCatch project preview" className="rounded-md shadow-md" />
@@ -123,10 +117,10 @@ function Projects( {content} ) {
 
                         <Carousel.Slide className="rounded-lg bg-[#D6E4F0] h-full pr-0 md:mr-4 mr-2">
 
-                            <div className="flex flex-col justify-evenly md:flex-row h-full p-2 md:justify-between md:h-[90%] md:p-4">
+                            <div className="flex flex-col justify-evenly cursor-grab md:flex-row h-full p-2 md:justify-between md:h-[90%] md:p-4">
 
                                 {/* Preview Image+Gif div */}
-                                <div className="relative md:w-[60%] h-auto self-center">
+                                <div className="relative md:w-[60%] h-auto self-center cursor-default">
                                     <img src={content[0]?.fields.project[2].project_image_static} alt="GoodCatch project preview" className="static rounded-md shadow-md max-w-[100%] max-h-[100%]" />
 
                                     <img src={content[0]?.fields.project[2].project_image_gif} alt="GoodCatch project preview" className="rounded-md shadow-md" />
@@ -164,10 +158,10 @@ function Projects( {content} ) {
 
                         <Carousel.Slide className="rounded-lg bg-[#D6E4F0] h-full pr-0 md:mr-4">
 
-                            <div className="flex flex-col justify-evenly md:flex-row h-full p-2 md:justify-between md:h-[90%] md:p-4">
+                            <div className="flex flex-col justify-evenly cursor-grab md:flex-row h-full p-2 md:justify-between md:h-[90%] md:p-4">
 
                                 {/* Preview Image+Gif div */}
-                                <div className="relative md:w-[60%] h-auto self-center">
+                                <div className="relative md:w-[60%] h-auto self-center cursor-default">
                                     <img src={content[0]?.fields.project[3].project_image_static} alt="GoodCatch project preview" className="rounded-md shadow-md max-w-[100%] max-h-[100%]" />
 
                                 </div>
