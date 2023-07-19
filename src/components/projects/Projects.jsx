@@ -37,7 +37,7 @@ function Projects( {content} ) {
 
                                 {/* Preview Image+Gif div */}
                                 <div className="relative md:w-[60%] h-auto self-center cursor-default">
-                                    <img src={content[0]?.fields.project[0].project_image_static} alt="GoodCatch project preview" className="static rounded-md shadow-md max-w-[100%] max-h-[100%]" />
+                                    <img src={content[0]?.fields.project[0].project_image_static} alt="GoodCatch project preview" className="static rounded-md shadow-md h-[100%] max-w-[100%] max-h-[100%]" />
 
                                     <img src={content[0]?.fields.project[0].project_image_gif} alt="GoodCatch project preview" className="rounded-md shadow-md" />
                                 </div>
@@ -78,9 +78,9 @@ function Projects( {content} ) {
 
                                 {/* Preview Image+Gif div */}
                                 <div className="relative md:w-[60%] h-auto self-center cursor-default">
-                                    <img src={content[0]?.fields.project[1].project_image_static} alt="GoodCatch project preview" className="static rounded-md shadow-md max-w-[100%] max-h-[100%]" />
+                                    <img src={content[0]?.fields.project[1].project_image_static} alt="Pragmatic Energy preview" className="static rounded-md shadow-md h-[100%] max-w-[100%] max-h-[100%]" />
 
-                                    <img src={content[0]?.fields.project[1].project_image_gif} alt="GoodCatch project preview" className="rounded-md shadow-md" />
+                                    <img src={content[0]?.fields.project[1].project_image_gif} alt="Pragmatic Energy preview" className="rounded-md shadow-md" />
                                 </div>
 
                                 {/* Text */}
@@ -121,9 +121,9 @@ function Projects( {content} ) {
 
                                 {/* Preview Image+Gif div */}
                                 <div className="relative md:w-[60%] h-auto self-center cursor-default">
-                                    <img src={content[0]?.fields.project[2].project_image_static} alt="GoodCatch project preview" className="static rounded-md shadow-md max-w-[100%] max-h-[100%]" />
+                                    <img src={content[0]?.fields.project[2].project_image_static} alt="TrackAJet preview" className="static rounded-md shadow-md h-[100%] max-w-[100%] max-h-[100%]" />
 
-                                    <img src={content[0]?.fields.project[2].project_image_gif} alt="GoodCatch project preview" className="rounded-md shadow-md" />
+                                    <img src={content[0]?.fields.project[2].project_image_gif} alt="TrackAJet preview" className="rounded-md shadow-md" />
                                 </div>
 
                                 {/* Text */}
@@ -162,7 +162,7 @@ function Projects( {content} ) {
 
                                 {/* Preview Image+Gif div */}
                                 <div className="relative md:w-[60%] h-auto self-center cursor-default">
-                                    <img src={content[0]?.fields.project[3].project_image_static} alt="GoodCatch project preview" className="rounded-md shadow-md max-w-[100%] max-h-[100%]" />
+                                    <img src={content[0]?.fields.project[3].project_image_static} alt="Personal portfolio project preview" className="rounded-md shadow-md sm:w-[100%] max-w-[100%] max-h-[100%]" />
 
                                 </div>
 
